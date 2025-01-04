@@ -25,6 +25,11 @@
     "editor.formatOnSave": false,
     "editor.defaultFormatter": null
   },
+  "[html]": {
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+  },
   "[javascriptreact]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": null
@@ -67,6 +72,7 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "ayu-owl"
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "ayu-owl",
+  "liveServer.settings.donotVerifyTags": true
 }
