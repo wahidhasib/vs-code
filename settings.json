@@ -1,7 +1,7 @@
 {
   // editor
   "editor.fontSize": 18,
-  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontFamily": "Playwrite AU SA, Operator Mono",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -20,14 +20,14 @@
   "editor.cursorBlinking": "expand",
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": null
   },
   "[html]": {
     "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
   },
   "[javascriptreact]": {
@@ -35,8 +35,13 @@
     "editor.defaultFormatter": null
   },
   "[php]": {
-    "files.autoSave": "off",
-    "editor.defaultFormatter": "rifi2k.format-html-in-php",
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": true
   },
   "editor.codeActionsOnSave": {
@@ -46,13 +51,13 @@
   },
   "eslint.alwaysShowStatus": true,
   //terminal
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "terminal.integrated.fontFamily": "poppins",
   // terminal customization
   "workbench.colorCustomizations": {
-    "terminal.background": "#1D2021",
-    "terminal.foreground": "#A89984",
+    "terminal.background": "#1A2130",
+    "terminal.foreground": "#d3d3d3",
     "terminalCursor.background": "#A89984",
     "terminalCursor.foreground": "#A89984",
     "terminal.ansiBlack": "#1D2021",
@@ -64,7 +69,7 @@
     "terminal.ansiBrightMagenta": "#8F4673",
     "terminal.ansiBrightRed": "#FB543F",
     "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiBrightYellow": "#2372d8d0",
     "terminal.ansiCyan": "#8BA59B",
     "terminal.ansiGreen": "#95C085",
     "terminal.ansiMagenta": "#8F4673",
@@ -72,7 +77,7 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "files.autoSave": "onFocusChange",
-  "workbench.colorTheme": "ayu-owl",
-  "liveServer.settings.donotVerifyTags": true
+  "workbench.colorTheme": "Dracula Theme",
+  "liveServer.settings.donotVerifyTags": true,
+  "database-client.autoSync": true
 }
