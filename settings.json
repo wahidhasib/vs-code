@@ -77,7 +77,7 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "workbench.colorTheme": "Dracula Theme",
+  "workbench.colorTheme": "Learn with Sumit Theme - Dracula version",
   "liveServer.settings.donotVerifyTags": true,
   "database-client.autoSync": true
 }
