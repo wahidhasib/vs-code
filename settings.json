@@ -1,95 +1,99 @@
 {
-  // editor
+  // ------------------------
+  // Editor
+  // ------------------------
   "editor.fontSize": 18,
   "editor.fontFamily": "Playwrite AU SA, Operator Mono",
+  "editor.fontStyle": "italic",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
+
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
+          "fontStyle": "italic",
+        },
+      },
+    ],
   },
-  // cursor
+
+  // Cursor
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-  // config related to code formatting
+
+  // ------------------------
+  // Formatting (FIXED)
+  // ------------------------
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[vue-html]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
   "[html]": {
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
   "[php]": {
-    "files.autoSave": "onFocusChange",
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
+
   "[blade]": {
-    "files.autoSave": "onFocusChange",
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
+
+  // ❌ REMOVE conflicting formatter
+  // "lonefy.vscode-JS-CSS-HTML-formatter"
+
+  // ------------------------
+  // ESLint
+  // ------------------------
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.tslint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
+
   "eslint.alwaysShowStatus": true,
-  //terminal
+
+  // ------------------------
+  // Terminal
+  // ------------------------
   "terminal.integrated.fontSize": 18,
-  "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "poppins",
-  // terminal customization
+
   "workbench.colorCustomizations": {
     "terminal.background": "#1A2130",
     "terminal.foreground": "#d3d3d3",
-    "terminalCursor.background": "#A89984",
-    "terminalCursor.foreground": "#A89984",
-    "terminal.ansiBlack": "#1D2021",
-    "terminal.ansiBlue": "#0D6678",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#0D6678",
-    "terminal.ansiBrightCyan": "#8BA59B",
-    "terminal.ansiBrightGreen": "#95C085",
-    "terminal.ansiBrightMagenta": "#8F4673",
-    "terminal.ansiBrightRed": "#FB543F",
-    "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#2372d8d0",
-    "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#95C085",
-    "terminal.ansiMagenta": "#8F4673",
-    "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#A89984",
-    "terminal.ansiYellow": "#FAC03B"
   },
-  "workbench.colorTheme": "Learn with Sumit Theme - Dracula version",
-  "liveServer.settings.donotVerifyTags": true,
-  "database-client.autoSync": true,
+
+  // ------------------------
+  // Misc
+  // ------------------------
   "explorer.confirmDelete": false,
-  "amazonQ.suppressPrompts": {
-    "amazonQChatPairProgramming": true
-  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Learn with Sumit Theme",
+
+  // Vue
+  "vue.format.defaultFormatter.html": "prettier",
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
     "C:\\Users\\WAHID\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
     "C:\\Users\\WAHID\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
     "C:\\Users\\WAHID\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
@@ -97,31 +101,9 @@
     "C:\\Users\\WAHID\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
     "C:\\Users\\WAHID\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
   },
-  "workbench.iconTheme": "vscode-icons",
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "explorer.confirmPasteNative": false,
-  "auto-close-tag.activationOnLanguage": [
-
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-    "erb",
-    "lang-cfml",
-    "cfml",
-    "HTML (EEx)",
-    "HTML (Eex)",
-    "plist"
-  ]
+  "files.autoSave": "onFocusChange",
+  "chat.disableAIFeatures": true,
+  "vscode-pets.petColor": "lightbrown",
+  "vscode-pets.petType": "panda",
+  "vscode-pets.theme": "forest",
 }
